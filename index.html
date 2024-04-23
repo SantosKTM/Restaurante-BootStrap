@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- caracteres UTF-8 para caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- dimensionamento correto em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/OIG2-removebg-preview.png">
+    <!-- Link para o Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
@@ -18,6 +21,7 @@
 
 <!--opções do site-->
 <nav>
+    <!-- links de navegação para seções -->
     <a href="#cardapio">Cardápio</a>
     <a href="#reservas">Reservas</a>
     <a href="#contato">Contato</a>
@@ -28,22 +32,27 @@
 <div class="container">
     <!-- seção do Cardápio -->
     <section id="cardapio">
+        
         <h2>Cardápio</h2>
         <p>Aqui estão alguns dos pratos deliciosos que oferecemos:</p>
-        <!-- grid do Bootstrap para organizar os itens do cardápio em colunas responsivas -->
+        
+        <!-- Grid do Bootstrap para organizar os itens do cardápio em colunas responsivas -->
         <div class="row">
+            <!-- "col-md-4" definindo o comportamento das colunas para dispositivos médios, ocupando 4 unidades de largura em um total de 12 unidades no sistema de grid do Bootstrap. Garante que as colunas se ajustem em dispositivos de tamanho médio, para um layout responsivo. -->
             <div class="col-md-4">
                 <h3>Strogonoff</h3>
                 <img src="imgs/strogonoff.jpeg" alt="Strogonoff" class="img-fluid">
                 <p>Delicioso strogonoff preparado com carne, molho cremoso e acompanhamentos.</p>
                 <p><span>Preço: R$ 25,00</span></p>
             </div>
+
             <div class="col-md-4">
                 <h3>Picanha</h3>
                 <img src="imgs/picanha.jpg" alt="Picanha" class="img-fluid">
                 <p>Suculenta picanha grelhada no ponto desejado, acompanhada de arroz, feijão e farofa.</p>
                 <p><span>Preço: R$ 35,00</span></p>
             </div>
+
             <div class="col-md-4">
                 <h3>Carbonara</h3>
                 <img src="imgs/carbonara.jpg" alt="Carbonara" class="img-fluid">
@@ -59,21 +68,25 @@
         <h2>Reservas</h2>
         <p>Faça sua reserva agora mesmo!</p>
         <p>Preencha o formulário de reserva abaixo:</p>
-        <!-- formulário de reservas -->
+
         <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" >
             <br>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" >
             <br>
+
             <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required>
+            <input type="date" id="data">
             <br>
+
             <input type="submit" value="Reservar">
         </form>
     </section>
 
+    <!-- seção de contato -->
     <section id="contato">
         <h2>Contato</h2>
         <p>Entre em contato conosco para mais informações:</p>

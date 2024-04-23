@@ -1,134 +1,125 @@
-/* Estilos globais */
+
+/* todo o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* fonte para o corpo do documento */
+    margin: 0; /* remove margens externas */
+    padding: 0; /* remove o preenchimento interno */
 }
 
-/* Estilos para o cabeçalho */
+/* cabeçalho */
+
 header {
-    background-color: #ffcc00;
-    padding: 20px;
-    text-align: center;
-    display:block
+    background-color: #ffcc00; 
+    padding: 20px; /* preenchimento interno ao cabeçalho */
+    text-align: center; /* centraliza o texto */
+    display:block; /* transformando o elemento como um bloco */
 }
 
 header h1 {
-    font-size: 36px;
-    color: #333;
+    font-size: 36px; /* tamanho da fonte do título */
+    color: #333; /* cor do texto do título */
 }
 
-/* Estilos para a navegação */
+/* navegação */
 nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    background-color: #333; 
+    text-align: center; /* centraliza o texto na barra de navegação */
+    padding: 10px 0; /* preenchimento interno à barra de navegação (10 p/ superior e inferior) */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 20px;
-    transition: color 0.3s ease;
+    color: #fff; /* cor do texto dos links */
+    text-decoration: none; /* tira a decoração padrão dos links */
+    padding: 0 20px; /* preenchimento interno aos links */
+    transition: color 0.3s ease; /* transição suave para a cor do texto dos links */
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* cor do texto dos links quando o mouse ta encima deles */
 }
 
-/* Estilos para o conteúdo */
+/* conteudo */
+
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 80%; /* largura do conteiner principal */
+    margin: auto; /* centraliza o conteiner */
 }
 
 section {
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* preenchimento interno às seções */
+    margin-top: 20px; /* margem superior às seções */
+    background-color: #fff; 
+    border-radius: 5px; /* bordas arredondadas às seções */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra às seções (0 para eixo X (horizontal), 2 para eixo Y (verticalmente), 5 para desfoque da sombra, 0.1 de opacidade da cor preta */ 
 }
 
 section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 24px; /* tamanho da fonte dos títulos das seções */
+    margin-bottom: 10px; /* margem inferior aos títulos das seções */
 }
 
 section p {
-    font-size: 16px;
+    font-size: 16px; /* tamanho da fonte dos parágrafos */
 }
 
+/* estilo das imagens dentro das seções */
 section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Estilos para o rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    max-width: 100%; /* largura máxima das imagens para que não ultrapassem o contêiner */
+    height: auto; /* proporção automatica para a imagem */
+    margin-bottom: 10px; /* margem inferior às imagens */
 }
 
 header img {
-    width: 90px;
-
+    width: 90px; /* largura da imagem do logotipo */
 }
 
+/* estilo específico para a seção do cardápio, justificando o texto */
 #cardapio {
     text-align: justify;
 }
 
+/* estilo para o texto em negrito dentro da seção do cardápio */
 #cardapio span {
-    font-weight: bold;
+    font-weight: bold; 
 }
 
-/* Estilização do formulário de reservas */
 form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; 
+    padding: 20px; /* preenchimento interno ao formulário */
+    border-radius: 10px; /* bordas arredondadas ao formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra às seções (0 para eixo X (horizontal), 4 para eixo Y (verticalmente), 8 para desfoque da sombra, 0.1 de opacidade da cor preta */ 
 }
 
+/* estilo dos rótulos dentro do formulário */
 form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 5px; /* margem inferior aos rótulos */
+    font-weight: bold; /* fonte como negrito */
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="date"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    width: calc(100% - 20px); /* largura dos campos de entrada de texto */
+    padding: 10px; /* preenchimento interno */
+    margin-bottom: 20px; /*  margem inferior  */
+    border: 1px solid #ccc; /* borda sólida com a cor cinza */
+    border-radius: 5px; /* bordas arredondadas */
+    font-size: 16px; /* tamanho da fonte */
 }
 
 form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffcc00;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%; /* largura do botão de envio do formulário */
+    padding: 10px; /* preenchimento interno */
+    border: none; /* remove borda */
+    border-radius: 5px; /* bordas arredondadas */
+    background-color: #ffcc00; 
+    color: #333; 
+    font-size: 16px; 
+    font-weight: bold; /* negrito */
+    cursor: pointer; /* altera o cursor do mouse */
+    transition: background-color 0.3s ease; /* transição suave para a cor de fundo */
 }
 
 form input[type="submit"]:hover {
-    background-color: #ffb400;
+    background-color: #ffb400; 
 }
